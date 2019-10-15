@@ -4,11 +4,11 @@ import {HeroService} from '../../services/hero.service'
 let service = new HeroService();
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-homecontent',
+  templateUrl: './homecontent.component.html',
+  styleUrls: ['./homecontent.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeContentComponent implements OnInit {
   public title: string = '首页';
   public flag: boolean = true;
   public color: string = 'blue';
