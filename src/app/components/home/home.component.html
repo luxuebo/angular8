@@ -1,5 +1,4 @@
-<app-title></app-title>
-<p>{{title}}</p>
+<app-title [title]='title'></app-title>
 <h1>1.指令</h1>
 <p [ngClass]="{color:flag}">ngClass</p>
 <p [ngStyle]="{color: color}">ngStyle</p>
@@ -26,3 +25,8 @@
 <h1>3.双向数据绑定</h1>
 <input type="text" [(ngModel)]="binding">
 <span>{{binding}}</span>
+<h1>4.服务</h1>
+<button (click)='getService()'>调用服务方法</button>
+<h1>5.生命周期函数</h1>
+<div #vbox>ViewChildren</div>
+<h1>6.子父组件传参</h1>
