@@ -1,2 +1,13 @@
 <app-navigation></app-navigation>
-<app-homecontent></app-homecontent>
+<div class="box">
+    <ul class="aside_router">
+        <li *ngFor="let item of asideTitle;index as key">
+            <a [routerLink]="[item.path]" routerLinkActive="active">{{key+1}}.{{ item.title }}</a>
+        </li>
+    </ul>
+    <div class='content'>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<!-- <app-homecontent></app-homecontent> -->

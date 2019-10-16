@@ -1,0 +1,22 @@
+.box{
+    .aside_router{
+        position: fixed;
+        top:21px;
+        left:0;
+        bottom:0;
+        width: 200px;
+        border:1px solid #ccc;
+        background-color: #ddd;
+    
+    }
+    .content{
+        position: fixed;
+        left:201px;
+        top:21px;
+        bottom: 0;
+        right: 0;
+        border:1px solid #ff4400;
+        overflow-y: scroll;
+    }
+}
+
