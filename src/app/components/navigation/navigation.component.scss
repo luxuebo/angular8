@@ -2,9 +2,11 @@
     background-color: #ddd;
     text-align: center;
     a{
-      padding: 10px 40px;  
+      padding: 10px 40px; 
+      text-decoration: none; 
+      color:black;
     }
-    .active{
+    a.active{
         color:red;
     }
 }

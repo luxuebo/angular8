@@ -10,6 +10,12 @@ export class HomeComponent implements OnInit {
     path:'directive',
     title:'指令'
   },{
+    path:'ngmodel',
+    title:'双向数据绑定'
+  },{
+    path:'childParent',
+    title:'子父组件通信'
+  },{
     path:'event',
     title:'事件'
   },{
@@ -19,7 +25,7 @@ export class HomeComponent implements OnInit {
     path:'lifecycle',
     title:'生命周期'
   },{
-    path:'ajax',
+    path:'http',
     title:'网络请求'
   }]
   constructor() { }

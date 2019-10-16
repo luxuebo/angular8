@@ -7,6 +7,19 @@
         width: 200px;
         border:1px solid #ccc;
         background-color: #ddd;
+        overflow-y: auto;
+        li{
+            border-bottom: 1px solid #ccc;
+            a{
+                text-decoration: none;
+                color:black;
+
+            }
+            a.active{
+                color:red;
+            }
+        }
+        
     
     }
     .content{
@@ -16,7 +29,7 @@
         bottom: 0;
         right: 0;
         border:1px solid #ff4400;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
 

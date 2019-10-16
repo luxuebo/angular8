@@ -4,10 +4,15 @@ import { NgModule } from '@angular/core';
 
 import {HomeComponent} from '../views/home/home.component';
 import {DirectiveComponent} from '../views/home/component/directive/directive.component'
+import {NgmodelComponent} from '../views/home/component/ngmodel/ngmodel.component'
+import {ChildParentComponent} from '../views/home/component/child-parent/child-parent.component'
+
+
 import {EventComponent} from '../views/home/component/event/event.component'
 import {ServiceComponent} from '../views/home/component/service/service.component'
 import {LifecycleComponent} from '../views/home/component/lifecycle/lifecycle.component'
-import {AjaxComponent} from '../views/home/component/ajax/ajax.component'
+import {HttpRequestComponent} from '../views/home/component/http-request/http-request.component'
+
 
 import {MineComponent} from '../views/mine/mine.component';
 import {NotesComponent} from '../views/notes/notes.component';
@@ -27,6 +32,12 @@ const appRoutes: Routes = [
         path:'directive',
         component:DirectiveComponent
       },{
+        path:'ngmodel',
+        component:NgmodelComponent
+      },{
+        path:'childParent',
+        component:ChildParentComponent
+      },{
         path:'event',
         component:EventComponent
       },{
@@ -36,8 +47,8 @@ const appRoutes: Routes = [
         path:'lifecycle',
         component:LifecycleComponent
       },{
-        path:'ajax',
-        component:AjaxComponent
+        path:'http',
+        component:HttpRequestComponent
       }]
     },
     {

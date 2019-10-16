@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeContentComponent } from './homecontent.component';
+import { HttpRequestComponent } from './http-request.component';
 
-describe('HomeComponent', () => {
-  let component: HomeContentComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+describe('HttpRequestComponent', () => {
+  let component: HttpRequestComponent;
+  let fixture: ComponentFixture<HttpRequestComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeContentComponent ]
+      declarations: [ HttpRequestComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeContentComponent);
+    fixture = TestBed.createComponent(HttpRequestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -11,5 +11,7 @@ export class EventComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  click(e) {
+    console.log(e)
+  }
 }

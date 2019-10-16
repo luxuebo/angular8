@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AjaxComponent } from './ajax.component';
+import { NgmodelComponent } from './ngmodel.component';
 
-describe('AjaxComponent', () => {
-  let component: AjaxComponent;
-  let fixture: ComponentFixture<AjaxComponent>;
+describe('NgmodelComponent', () => {
+  let component: NgmodelComponent;
+  let fixture: ComponentFixture<NgmodelComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AjaxComponent ]
+      declarations: [ NgmodelComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AjaxComponent);
+    fixture = TestBed.createComponent(NgmodelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

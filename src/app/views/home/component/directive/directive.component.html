@@ -1,1 +1,19 @@
-<p>directive works!</p>
+<p [ngClass]="{color:flag}">ngClass</p>
+<p [ngStyle]="{color: color}">ngStyle</p>
+<p *ngIf="flag">ngIf true</p>
+<p *ngIf="!flag">ngIf false</p>
+<hr>
+<h5>*ngFor</h5>
+<ul>
+    <li *ngFor="let item of list;index as key">
+        {{key}} ------{{item}}
+    </li>
+    <!-- <li *ngFor="let item of list;let key = index">
+        {{key}} ------{{item}}
+    </li> -->
+</ul>
+<h5>*ngSwitch</h5>
+<div [ngSwitch]="flag">
+    <div *ngSwitchCase="true">output1</div>
+    <div *ngSwitchDefault>output2</div>
+</div>
