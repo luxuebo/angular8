@@ -2,9 +2,10 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import {HomeComponent} from './views/home/home.component';
-import {MineComponent} from './views/mine/mine.component';
-import {FourzerofourComponent} from './views/fourzerofour/fourzerofour.component'
+import {HomeComponent} from '../views/home/home.component';
+import {MineComponent} from '../views/mine/mine.component';
+import {NotesComponent} from '../views/notes/notes.component';
+import {FourzerofourComponent} from '../views/fourzerofour/fourzerofour.component'
 
 const appRoutes: Routes = [
     {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
     {
       path:'home',
       component:HomeComponent
+    },
+    {
+      path:'notes',
+      component:NotesComponent
     },
     {
         path:'mine',

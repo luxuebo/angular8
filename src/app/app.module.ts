@@ -2,10 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 //路由
-import { AppModuleRouter } from './app.module.router';
+import { AppModuleRouter } from './router/app.module.router';
 //组件
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
+import { NotesComponent } from './views/notes/notes.component';
 import { MineComponent } from './views/mine/mine.component';
 import { FourzerofourComponent } from './views/fourzerofour/fourzerofour.component';
 
@@ -27,6 +28,7 @@ import {HeroService} from './services/hero.service';
     TitleComponent,
     FourzerofourComponent,
     NavigationComponent,
+    NotesComponent,
     
   ],
   imports: [
