@@ -7,13 +7,17 @@ import { AppModuleRouter } from './app.module.router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 import { MineComponent } from './views/mine/mine.component';
+import { FourzerofourComponent } from './views/fourzerofour/fourzerofour.component';
 
 import { TitleComponent } from './components/title/title.component';
 import { HomeContentComponent } from './components/homecontent/homecontent.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 
 //服务
 import {HeroService} from './services/hero.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +25,8 @@ import {HeroService} from './services/hero.service';
     MineComponent,
     HomeContentComponent,
     TitleComponent,
+    FourzerofourComponent,
+    NavigationComponent,
     
   ],
   imports: [
