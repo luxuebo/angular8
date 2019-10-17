@@ -1,5 +1,5 @@
 .app_navigation{
-    background-color: #ddd;
+    background-color: rgba(63, 43, 43, 0.603);
     text-align: center;
     a{
       padding: 10px 40px; 
@@ -7,6 +7,6 @@
       color:black;
     }
     a.active{
-        color:red;
+        color:white;
     }
 }

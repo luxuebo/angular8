@@ -25,6 +25,9 @@ export class HomeComponent implements OnInit {
     path:'lifecycle',
     title:'生命周期'
   },{
+    path:'routerjump',
+    title:'路由跳转及路由传参'
+  },{
     path:'http',
     title:'网络请求'
   }]

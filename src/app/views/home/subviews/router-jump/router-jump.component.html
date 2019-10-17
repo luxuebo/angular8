@@ -1,0 +1,7 @@
+<li><a [routerLink]="['/home/routerjump/linkget']" [queryParams]="{ id:1 }" routerLinkActive="active">1.routerLink get方式传参</a></li> 
+<li><a [routerLink]="['/home/routerjump/linkdynamic', 2]" routerLinkActive="active">2.routerLink动态路由传参</a></li>
+<li><span (click)='jsRouterJumpGet()'>3.js控制路由跳转,get方式传参</span></li>
+<li><span (click)='jsRouterJumpDynamic()'>4.js控制路由跳转,动态路由传参</span></li>
+<div class="content">
+    <router-outlet></router-outlet>
+</div>

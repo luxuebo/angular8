@@ -1,0 +1,18 @@
+.content{
+    text-align: center;
+    padding: 20px 0;
+    background:grey;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a.active{
+    color:blueviolet;
+}
+li {
+    padding: 8px 0;
+    span{
+        cursor: pointer;
+    }
+}
