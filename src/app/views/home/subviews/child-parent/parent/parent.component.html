@@ -1,0 +1,5 @@
+<div>
+    <p>parent works!</p>
+    <div>父组件接收子组件的数据:{{receiveData}}</div>
+</div>
+<app-child [data]='dataToChild' [data1]='dataToChild1' (dataToParent)='dataToParent($event)'></app-child>

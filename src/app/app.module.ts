@@ -6,7 +6,7 @@ import { HttpClientModule,HttpClientJsonpModule} from '@angular/common/http';//a
 //路由
 import { AppModuleRouter } from './router/app.module.router';
 //组件
-import { AppComponent } from './app-root/app.component';//根组件
+import { AppComponent } from './app.component';//根组件
 import { HomeComponent } from './views/home/home.component';
 import { DirectiveComponent } from './views/home/subviews/directive/directive.component';
 import { EventComponent } from './views/home/subviews/event/event.component';
@@ -29,10 +29,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 //服务
 import {HeroService} from './services/hero.service';
-
-
-
-
+import { ChildComponent } from './views/home/subviews/child-parent/child/child.component';
+import { ParentComponent } from './views/home/subviews/child-parent/parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +53,8 @@ import {HeroService} from './services/hero.service';
     LinkDynamicComponent,
     JsGetComponent,
     JsDynamicComponent,
+    ChildComponent,
+    ParentComponent,
   ],
   imports: [
     BrowserModule,
