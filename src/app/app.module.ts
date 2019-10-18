@@ -35,6 +35,8 @@ import {HeroService} from './services/hero.service';
 
 //自定义指令
 import { FontColorDirective } from './directives/font-color.directive';
+
+//自定义管道
 import { HumpNamePipe } from './pipes/humpName/hump-name.pipe';
 
 @NgModule({
