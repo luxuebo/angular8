@@ -11,6 +11,7 @@ export class DirectiveComponent implements OnInit {
   public color: string = 'blue';
   public list: any[] = ['第一项', '第二项', true, 100, new Date()]
   public binding: any = '';
+  fontcolor:string = 'blue';
   constructor() { }
 
   ngOnInit() {

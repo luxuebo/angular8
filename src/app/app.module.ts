@@ -14,6 +14,8 @@ import { ServiceComponent } from './views/home/subviews/service/service.componen
 import { LifecycleComponent } from './views/home/subviews/lifecycle/lifecycle.component';
 import { NgmodelComponent } from './views/home/subviews/ngmodel/ngmodel.component';
 import { ChildParentComponent } from './views/home/subviews/child-parent/child-parent.component';
+import { ChildComponent } from './views/home/subviews/child-parent/child/child.component';
+import { ParentComponent } from './views/home/subviews/child-parent/parent/parent.component';
 import { RouterJumpComponent } from './views/home/subviews/router-jump/router-jump.component';
 import { LinkGetComponent } from './views/home/subviews/router-jump/subviews/link-get/link-get.component';
 import { LinkDynamicComponent } from './views/home/subviews/router-jump/subviews/link-dynamic/link-dynamic.component';
@@ -29,8 +31,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 //服务
 import {HeroService} from './services/hero.service';
-import { ChildComponent } from './views/home/subviews/child-parent/child/child.component';
-import { ParentComponent } from './views/home/subviews/child-parent/parent/parent.component';
+
+//自定义指令
+import { FontColorDirective } from './directives/font-color.directive';
 
 @NgModule({
   declarations: [
@@ -55,6 +58,7 @@ import { ParentComponent } from './views/home/subviews/child-parent/parent/paren
     JsDynamicComponent,
     ChildComponent,
     ParentComponent,
+    FontColorDirective,
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+<h2>1.内置指令</h2>
 <p [ngClass]="{color:flag}">ngClass</p>
 <p [ngStyle]="{color: color}">ngStyle</p>
 <p *ngIf="flag">ngIf true</p>
@@ -17,3 +18,7 @@
     <div *ngSwitchCase="true">output1</div>
     <div *ngSwitchDefault>output2</div>
 </div>
+<h2>2.自定义指令</h2>
+<div appFontColor>自定义指令设置字体颜色为红色(默认颜色)</div>
+<div [appFontColor]='fontcolor'>自定义指令设置字体颜色为红色</div>
+
