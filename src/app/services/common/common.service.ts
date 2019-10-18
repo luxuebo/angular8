@@ -3,10 +3,10 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class HeroService {
+export class CommonService {
 
   constructor() { }
-  get(str){
-    console.log(str)
+  arrSort(arr:any[]){
+    console.log(arr)
   }
 }

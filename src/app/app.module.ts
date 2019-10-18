@@ -30,8 +30,8 @@ import { TitleComponent } from './components/title/title.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 
 
-//服务
-import {HeroService} from './services/hero.service';
+//自定义服务
+import {CommonService} from './services/common/common.service'
 
 //自定义指令
 import { FontColorDirective } from './directives/fontColor/font-color.directive'
@@ -74,7 +74,7 @@ import { HumpNamePipe } from './pipes/humpName/hump-name.pipe';
     HttpClientJsonpModule//jsonp请求
 
   ],
-  providers: [HeroService],
+  providers: [CommonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroService } from '../../../../services/hero.service'
+import { CommonService } from '../../../../services/common/common.service'
 //方式一:使用服务
-let service = new HeroService();
+let commonService = new CommonService();
 
 @Component({
   selector: 'app-service',
@@ -10,14 +10,14 @@ let service = new HeroService();
 })
 export class ServiceComponent implements OnInit {
 
-  constructor(private heroService: HeroService) { }
+  constructor(private CommonService: CommonService) { }
 
   ngOnInit() {
   }
   getService(){
     //使用服务
-    service.get('方式一:使用服务(不推荐)');
-    this.heroService.get('方式二:使用服务(推荐)');
+    commonService.arrSort([80,85,90,10]);
+    this.CommonService.arrSort([20,100,60,30]);
   }
 
 }
