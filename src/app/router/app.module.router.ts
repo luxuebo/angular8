@@ -13,6 +13,7 @@ import {JsGetComponent} from '../views/home/subviews/router-jump/subviews/js-get
 import {JsDynamicComponent} from '../views/home/subviews/router-jump/subviews/js-dynamic/js-dynamic.component'
 import {EventComponent} from '../views/home/subviews/event/event.component'
 import {ServiceComponent} from '../views/home/subviews/service/service.component'
+import {PipeComponent} from '../views/home/subviews/pipe/pipe.component'
 import {LifecycleComponent} from '../views/home/subviews/lifecycle/lifecycle.component'
 import {HttpRequestComponent} from '../views/home/subviews/http-request/http-request.component'
 
@@ -48,6 +49,9 @@ const appRoutes: Routes = [
       },{
         path:'lifecycle',
         component:LifecycleComponent
+      },{
+        path:'pipe',
+        component:PipeComponent
       },{
         path:'routerjump',
         component:RouterJumpComponent,

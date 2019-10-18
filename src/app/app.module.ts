@@ -11,6 +11,7 @@ import { HomeComponent } from './views/home/home.component';
 import { DirectiveComponent } from './views/home/subviews/directive/directive.component';
 import { EventComponent } from './views/home/subviews/event/event.component';
 import { ServiceComponent } from './views/home/subviews/service/service.component';
+import { PipeComponent } from './views/home/subviews/pipe/pipe.component';
 import { LifecycleComponent } from './views/home/subviews/lifecycle/lifecycle.component';
 import { NgmodelComponent } from './views/home/subviews/ngmodel/ngmodel.component';
 import { ChildParentComponent } from './views/home/subviews/child-parent/child-parent.component';
@@ -34,6 +35,7 @@ import {HeroService} from './services/hero.service';
 
 //自定义指令
 import { FontColorDirective } from './directives/font-color.directive';
+import { HumpNamePipe } from './pipes/humpName/hump-name.pipe';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { FontColorDirective } from './directives/font-color.directive';
     ChildComponent,
     ParentComponent,
     FontColorDirective,
+    PipeComponent,
+    HumpNamePipe,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+<div>
+    <h2>1.内置管道</h2>
+    <ul>
+        <li>格式化日期:{{currentDate|date:'yyyy-MM-dd hh:mm:ss'}}</li>
+        <li>格式化日期:{{currentDate|date}}</li>
+        <li>字符串转换成大写:{{str|uppercase }}</li>
+        <li>字符串转换成小写:{{str1|uppercase }}</li>
+        <li>截取字符串(不包括结束下标):{{str|slice:1:2}}</li>
+        <li>对象转json:{{obj|json}}</li>
+        <li>格式化数字:{{num1|number:'.1-2'}}</li><!--参数.1-2表示保留1或2位小数-->
+        <li>格式化成百分比:{{num|percent:'.1-2'}}</li><!--参数.1-2表示保留1或2位小数-->
+    </ul>
+    <h2>2.自定义管道</h2>
+    <ul>
+        <li>驼峰命名: {{hump}}-->{{hump|humpName}}</li>
+    </ul>
+</div>
+
