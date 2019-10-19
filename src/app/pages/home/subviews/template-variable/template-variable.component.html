@@ -1,0 +1,7 @@
+<div #el>
+    <p>num one</p>
+    <p>num two</p>
+</div>
+<h4 [innerHtml]='el.innerHTML'>
+</h4>
+<button (click)='getDom(el,$event)'>获取dom</button>

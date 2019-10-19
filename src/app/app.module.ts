@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule,ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule,HttpClientJsonpModule} from '@angular/common/http';//angular中的http模块
 
 //路由
@@ -14,6 +14,9 @@ import { ServiceComponent } from './pages/home/subviews/service/service.componen
 import { PipeComponent } from './pages/home/subviews/pipe/pipe.component';
 import { LifecycleComponent } from './pages/home/subviews/lifecycle/lifecycle.component';
 import { NgmodelComponent } from './pages/home/subviews/ngmodel/ngmodel.component';
+import { TemplateVariableComponent } from './pages/home/subviews/template-variable/template-variable.component'
+import { FormComponent } from './pages/home/subviews/form/form.component';
+
 import { ChildParentComponent } from './pages/home/subviews/child-parent/child-parent.component';
 import { ChildComponent } from './pages/home/subviews/child-parent/child/child.component';
 import { ParentComponent } from './pages/home/subviews/child-parent/parent/parent.component';
@@ -65,10 +68,13 @@ import { HumpNamePipe } from './pipes/humpName/hump-name.pipe';
     FontColorDirective,
     PipeComponent,
     HumpNamePipe,
+    TemplateVariableComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,//数据双向绑定
+    ReactiveFormsModule,//响应式表单
     AppModuleRouter,//路由
     HttpClientModule,//http请求
     HttpClientJsonpModule//jsonp请求

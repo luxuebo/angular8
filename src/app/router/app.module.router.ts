@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import {HomeComponent} from '../pages/home/home.component';
 import {DirectiveComponent} from '../pages/home/subviews/directive/directive.component'
 import {NgmodelComponent} from '../pages/home/subviews/ngmodel/ngmodel.component'
+import {TemplateVariableComponent} from '../pages/home/subviews/template-variable/template-variable.component'
+import {FormComponent} from '../pages/home/subviews/form/form.component'
 import {ChildParentComponent} from '../pages/home/subviews/child-parent/child-parent.component'
 import {RouterJumpComponent} from '../pages/home/subviews/router-jump/router-jump.component'
 import {LinkGetComponent} from '../pages/home/subviews/router-jump/subviews/link-get/link-get.component'
@@ -37,6 +39,12 @@ const appRoutes: Routes = [
       },{
         path:'ngmodel',
         component:NgmodelComponent
+      },{
+        path:'templateVariable',
+        component:TemplateVariableComponent
+      },{
+        path:'form',
+        component:FormComponent
       },{
         path:'childParent',
         component:ChildParentComponent

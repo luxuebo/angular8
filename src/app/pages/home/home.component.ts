@@ -13,6 +13,12 @@ export class HomeComponent implements OnInit {
     path:'ngmodel',
     title:'双向数据绑定'
   },{
+    path:'templateVariable',
+    title:'模板临时变量'
+  },{
+    path:'form',
+    title:'表单'
+  },{
     path:'childParent',
     title:'子父组件通信'
   },{
