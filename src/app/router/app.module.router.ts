@@ -96,7 +96,10 @@ const appRoutes: Routes = [
     }
   ];
   @NgModule({
-    imports: [RouterModule.forRoot(appRoutes)],
+    imports: [RouterModule.forRoot(appRoutes,{useHash:true})],
     exports: [RouterModule]
   })
   export class AppModuleRouter { }
+  /*
+  {useHash:true}：使用hash模式路由，默认是history模式
+  */

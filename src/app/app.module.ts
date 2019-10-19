@@ -43,6 +43,7 @@ import { FontColorDirective } from './directives/fontColor/font-color.directive'
 import { HumpNamePipe } from './pipes/humpName/hump-name.pipe';
 
 @NgModule({
+  //组件、指令、管道
   declarations: [
     AppComponent,
     HomeComponent,
@@ -71,6 +72,7 @@ import { HumpNamePipe } from './pipes/humpName/hump-name.pipe';
     TemplateVariableComponent,
     FormComponent,
   ],
+  //模块
   imports: [
     BrowserModule,
     FormsModule,//数据双向绑定
@@ -80,6 +82,7 @@ import { HumpNamePipe } from './pipes/humpName/hump-name.pipe';
     HttpClientJsonpModule//jsonp请求
 
   ],
+  //服务
   providers: [CommonService],
   bootstrap: [AppComponent]
 })
